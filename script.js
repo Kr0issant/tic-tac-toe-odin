@@ -23,11 +23,11 @@ function ticClick(e) {
     boxes[e.target.id] = chance;
 
     if (chance === "cross") {
-        e.target.innerHTML = '<img src="./assets/cross.png">';
+        e.target.innerHTML = '<img src="./assets/cross.png" draggable="false">';
 
         chance = "circle";
     } else {
-        e.target.innerHTML = '<img src="./assets/circle.png">';
+        e.target.innerHTML = '<img src="./assets/circle.png" draggable="false">';
 
         chance = "cross";
     }
@@ -63,7 +63,7 @@ function checkWin() {
 
             let w = win.toString(2);
             w = "0".repeat(9 - w.length) + w;
-            
+
             for (i = 0; i < w.length; i++) {
                 if (w[i] === "1") {
                     document.getElementById(i).classList.add("win-tile");
