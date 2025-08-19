@@ -105,3 +105,13 @@ h1 {
     color: white;
     background-color: rgb(33, 33, 33);
 }
+
+.win-tile {
+    background-color: #b6ccbc;
+}
+.win-tile:hover {
+    background-color: #aac7b2;
+}
+.win-tile:active {
+    background-color: #9fd4ad;
+}
