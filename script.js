@@ -49,7 +49,6 @@ function ticClick(e) {
 function checkWin() {
     if (move === 9) {
         gameEnded = true;
-        return "tie";
     }
 
     let victor = "";
@@ -72,7 +71,7 @@ function checkWin() {
         }
     });
 
-    return victor;
+    return gameEnded ? "tie" : victor;
 }
 
 function reset() {
